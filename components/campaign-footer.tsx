@@ -33,7 +33,7 @@ export function CampaignFooter() {
             </p>
           </div>
           <p className="font-mono text-xs tracking-widest text-[#FFFFFF]/50 text-center mt-6 uppercase">
-            {'"I\'m asking for your vote to continue the work we\'ve started."'}
+            {'"When something isn\'t right, I say so. When your tax dollars are at stake, I do the math. That\'s the job."'}
           </p>
         </motion.div>
 
@@ -50,7 +50,7 @@ export function CampaignFooter() {
               GET IN TOUCH
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-[#FFFFFF] uppercase">
-              Contact the Campaign
+              Questions? I&apos;ll Answer Them.
             </h2>
           </div>
 
@@ -145,7 +145,7 @@ export function CampaignFooter() {
             DONATE VIA VENMO
           </a>
           <p className="font-mono text-xs tracking-widest text-[#FFFFFF]/40 mt-4 max-w-md mx-auto">
-            Every contribution supports outreach and voter engagement.
+            Every dollar goes to yard signs, door-knocking, and getting the message out.
           </p>
         </motion.div>
 

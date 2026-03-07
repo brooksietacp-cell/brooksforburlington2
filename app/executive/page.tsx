@@ -2,14 +2,14 @@
 
 import { motion } from "framer-motion";
 import { Header } from "@/components/header";
-import { ArrowLeft, Server, DollarSign, Users, Target } from "lucide-react";
+import { ArrowLeft, Server, DollarSign, BarChart3, Shield } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const capabilities = [
-  { icon: DollarSign, title: "Fiscal Oversight", text: "Multi-million dollar budget management with proven track record of maximizing ROI" },
-  { icon: Users, title: "Stakeholder Management", text: "Cross-functional leadership across engineering, operations, and executive teams" },
-  { icon: Target, title: "Strategic Execution", text: "Turning complex technical roadmaps into delivered results, on time and on budget" },
+  { icon: DollarSign, title: "$250M Acquisition Management", text: "Led defense acquisition programs up to $250 million. The same rigor applied to evaluating school district budgets, vendor contracts, and capital spending." },
+  { icon: BarChart3, title: "Cornell-Certified Analytics", text: "Business Analytics certification from Cornell University. Data-driven decision making for enrollment projections, budget modeling, and performance tracking." },
+  { icon: Shield, title: "CompTIA Security+", text: "Certified in cybersecurity fundamentals. Directly relevant to protecting student data privacy and evaluating district technology investments." },
 ];
 
 export default function ExecutivePage() {
@@ -41,7 +41,7 @@ export default function ExecutivePage() {
               </p>
             </div>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight text-[#FFFFFF] text-balance drop-shadow-lg">
-              Corporate Excellence
+              From Defense Acquisitions to School Governance
             </h1>
           </motion.div>
         </div>
@@ -82,7 +82,7 @@ export default function ExecutivePage() {
               As a Product Manager, I lead product development for defense technology systems that protect American service members and allies. This role demands precision, strategic thinking, and the ability to coordinate complex initiatives across multiple teams and stakeholders.
             </p>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed">
-              Working at the cutting edge of technology has given me a unique perspective on how innovation can solve seemingly impossible problems. Our schools deserve that same innovative approach — not bureaucratic status quo thinking.
+              Working at the cutting edge of technology has given me a unique perspective on how innovation can solve seemingly impossible problems. Our schools deserve that same innovative approach &mdash; not bureaucratic status quo thinking.
             </p>
           </motion.div>
 
@@ -116,7 +116,7 @@ export default function ExecutivePage() {
               Technical project management requires balancing competing priorities, managing risk, and delivering results on schedule. These skills translate directly to school board governance, where complex initiatives often stall due to poor planning and execution.
             </p>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed">
-              Whether it&apos;s implementing new educational technology, managing construction projects, or rolling out district-wide initiatives, I bring proven methodologies for turning plans into reality. Our students can&apos;t wait for endless deliberation — they need action.
+              Whether it&apos;s implementing new educational technology, managing construction projects, or rolling out district-wide initiatives, I bring proven methodologies for turning plans into reality. Our students can&apos;t wait for endless deliberation &mdash; they need action.
             </p>
           </motion.div>
 

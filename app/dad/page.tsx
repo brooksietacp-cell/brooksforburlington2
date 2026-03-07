@@ -11,7 +11,6 @@ export default function DadPage() {
     <main className="min-h-screen bg-[#FAFAF7]">
       <Header />
 
-      {/* Hero Section — stays dark (photo overlay) */}
       <section className="relative h-[60vh] min-h-[500px]">
         {/* DAD HERO IMAGE: Replace /public/images/family/dad-hero.jpg with a photo of you with Lillian & Madelyn */}
         <Image
@@ -46,9 +45,9 @@ export default function DadPage() {
       <section className="bg-[#FFFFFF] border-b border-[rgba(0,0,0,0.08)]">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 py-8 flex flex-col sm:flex-row gap-6 sm:gap-12 justify-center text-center">
           {[
-            { stat: "2", label: "Daughters in Burlington Schools" },
-            { stat: "100+", label: "School Events Attended" },
-            { stat: "Every", label: "PTC Meeting Since 2020" },
+            { stat: "2", label: "Daughters at Pine Glen" },
+            { stat: "Active", label: "Coach & Rec Volunteer" },
+            { stat: "Every", label: "PTC Meeting Since Enrollment" },
           ].map((item, i) => (
             <motion.div
               key={item.label}

@@ -4,19 +4,19 @@ import { motion } from "framer-motion";
 
 const cards = [
   {
-    overline: "INITIAL MANDATE [2023]",
-    title: "Elected to Committee",
-    text: "Honored to be elected in 2023 and privileged to serve the Burlington School Committee. Immediately began addressing needed policy implementation and governance improvements. Bringing a fresh perspective and 25 years of acquisition experience to the board.",
+    overline: "FISCAL DISCIPLINE",
+    title: "20-Year Capital Plan",
+    text: "Championed Burlington\u2019s first 20-year facilities plan \u2014 expanding the old 10-year framework to project lifecycle costs and protect taxpayers from budget surprises. This plan integrates school replacements, field maintenance, and major capital needs into one living document.",
   },
   {
-    overline: "INFRASTRUCTURE [2024–2025]",
-    title: "Oversight & Execution",
-    text: "Delivered critical repairs to Memorial School (lighting/fencing), managed the MSMS field renovation to come in under budget, and championed the Fox Hill renovation.",
+    overline: "ACCOUNTABILITY",
+    title: "Sole Vote on Principle",
+    text: "Cast the only dissenting vote on an off-agenda superintendent contract extension. Pushed for independent investigation and full accountability when student survey procedures were violated. Abstained on MCAS resolution until replacement standards were defined. When something isn\u2019t right, I say so.",
   },
   {
-    overline: "FUTURE OPERATIONS [2026+]",
-    title: "Innovation & STEM",
-    text: "Launching new AR/VR curriculum initiatives and maintaining strict fiscal oversight to protect tax dollars while enhancing education.",
+    overline: "SAFETY",
+    title: "School Safety Liaison",
+    text: "Appointed as the committee\u2019s first-ever Safety Committee Liaison after students raised concerns about knife threats and malfunctioning panic buttons. Advocated for $54,800 in emergency system upgrades and work to modernize decade-old security infrastructure across all schools.",
   },
 ];
 
@@ -31,7 +31,7 @@ export function OperationalRecord() {
         className="text-center mb-16"
       >
         <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-[#1A1A1A]">
-          OPERATIONAL RECORD: 2023–2026
+          THREE YEARS OF RESULTS
         </h2>
       </motion.div>
 

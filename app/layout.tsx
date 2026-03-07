@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jeremy Brooks | Burlington School Committee 2026",
     description:
-      "Leadership Tested. Promises Kept. A veteran, product manager, and dedicated father delivering fiscal discipline and innovation to Burlington schools.",
+      "Accountability. Discipline. Results. Three years of transparent governance, fiscal oversight, and safety leadership for Burlington Public Schools.",
     url: "https://brooksforburlington.com",
     siteName: "Brooks for Burlington",
     locale: "en_US",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jeremy Brooks | Burlington School Committee 2026",
     description:
-      "Leadership Tested. Promises Kept. Veteran, product manager, and dedicated father running for Burlington School Committee 2026.",
+      "Accountability. Discipline. Results. Re-elect Jeremy Brooks to Burlington School Committee, April 11.",
     images: ["https://brooksforburlington.com/images/campaign/hero.jpg"],
   },
   icons: {

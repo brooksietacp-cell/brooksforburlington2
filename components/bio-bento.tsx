@@ -8,19 +8,19 @@ const boxes = [
   {
     icon: Heart,
     label: "THE DAD",
-    text: "Dad to Lillian & Madelyn. Deeply invested in the future of our classrooms because my children sit in them every day.",
+    text: "Dad to Lillian & Madelyn at Pine Glen Elementary. When I vote on budgets, safety upgrades, or curriculum changes, my own kids are directly affected. That\u2019s my accountability. I go home every night.",
     href: "/dad",
   },
   {
     icon: Star,
     label: "THE VETERAN",
-    text: "4-time Bronze Star recipient. 20+ years of active duty and service. Bringing military-grade discipline to district operations.",
+    text: "Retired Air Force Senior Master Sergeant, a rank earned by only 2% of Airmen. 24 years of service. Managed teams of up to 219 members and defense acquisitions up to $250M. The discipline carries over.",
     href: "/veteran",
   },
   {
     icon: Server,
     label: "THE EXECUTIVE",
-    text: "Senior Product Manager. Expertise in managing multi-million dollar budgets and complex technical projects.",
+    text: "Senior Product Manager in defense technology. BS in Management & Technology from Bowling Green State, Cornell Business Analytics certification, CompTIA Security+. I read budgets and contracts for a living.",
     href: "/executive",
   },
 ];
@@ -36,7 +36,7 @@ export function BioBento() {
         className="text-center mb-16"
       >
         <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-[#1A1A1A]">
-          LEADERSHIP PROFILE
+          WHO I AM
         </h2>
       </motion.div>
 

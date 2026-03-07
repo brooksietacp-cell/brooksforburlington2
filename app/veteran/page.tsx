@@ -7,9 +7,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const timeline = [
-  { year: "2000s", title: "Active Duty Begins", text: "Entered active duty service, beginning over two decades of military commitment." },
-  { year: "2010s", title: "Combat Deployments", text: "Multiple deployments to combat zones. Earned the Bronze Star Medal four times for meritorious service." },
-  { year: "2020s", title: "Transition to Public Service", text: "Applied 25 years of acquisition expertise and military leadership to civilian governance and community impact." },
+  { year: "Enlistment", title: "Air Force Active Duty", text: "Entered active duty service in the United States Air Force, beginning a 24-year career in defense operations and acquisitions." },
+  { year: "Top 2%", title: "Senior Master Sergeant", text: "Promoted to Senior Master Sergeant \u2014 a rank achieved by only 2% of Airmen. Managed teams of up to 219 members and acquisitions up to $250M." },
+  { year: "2023", title: "Transition to Public Service", text: "Elected to the Burlington School Committee. Applied military discipline and acquisition expertise to school district governance." },
 ];
 
 export default function VeteranPage() {
@@ -41,7 +41,7 @@ export default function VeteranPage() {
               </p>
             </div>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight text-[#FFFFFF] text-balance drop-shadow-lg">
-              Decorated Service Record
+              24 Years of Service
             </h1>
           </motion.div>
         </div>
@@ -82,7 +82,7 @@ export default function VeteranPage() {
               Bronze Star Recipient
             </h2>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed mb-4">
-              The Bronze Star Medal is awarded for heroic or meritorious achievement in a combat zone. Receiving this honor four times wasn&apos;t about individual glory — it was recognition of what a team can accomplish when everyone commits to the mission.
+              The Bronze Star Medal is awarded for heroic or meritorious achievement in a combat zone. Receiving this honor four times wasn&apos;t about individual glory &mdash; it was recognition of what a team can accomplish when everyone commits to the mission.
             </p>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed">
               That same commitment to excellence, that same refusal to accept mediocrity, is what I bring to every challenge. Whether coordinating complex projects or advocating for better schools, the standard remains the same: mission success.
@@ -96,10 +96,10 @@ export default function VeteranPage() {
             viewport={{ once: true }}
           >
             <h2 className="font-display text-2xl md:text-4xl font-bold uppercase tracking-tight text-[#1A1A1A] mb-6">
-              20+ Years of Active Duty
+              24 Years of Active Duty
             </h2>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed mb-4">
-              Two decades of military service teaches you things that can&apos;t be learned in a classroom. Discipline. Accountability. The ability to make tough decisions under pressure. The understanding that leadership means taking responsibility, not assigning blame.
+              Over two decades of military service teaches you things that can&apos;t be learned in a classroom. Discipline. Accountability. The ability to make tough decisions under pressure. The understanding that leadership means taking responsibility, not assigning blame.
             </p>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed">
               My military career included deployments to combat zones, leadership of diverse teams, and management of critical operations where failure was not an option. These experiences forged a leadership style built on integrity, preparation, and decisive action.

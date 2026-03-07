@@ -74,10 +74,10 @@ export function ShareSection() {
             SPREAD THE WORD
           </p>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-[#1A1A1A] tracking-tight mb-6 uppercase">
-            Help Spread the Word
+            Burlington Votes April 11
           </h2>
           <p className="font-body text-base text-[#6B6B6B] mb-12 max-w-lg mx-auto">
-            Help share our campaign with friends and neighbors in Burlington.
+            Know someone in Burlington? Send them this site. Every vote matters in a four-candidate race for two seats.
           </p>
         </motion.div>
 
