@@ -6,7 +6,7 @@ import { Shield } from "lucide-react";
 
 const decorations = [
   { award: "Bronze Star Medal", count: "4×", detail: "Meritorious service in combat operations" },
-  { award: "Years of Service", count: "20+", detail: "Active duty and continued reserve commitment" },
+  { award: "Years of Service", count: "20+", detail: "Active duty commitment" },
   { award: "Acquisition Expertise", count: "25 yrs", detail: "Defense and technology program management" },
 ];
 
