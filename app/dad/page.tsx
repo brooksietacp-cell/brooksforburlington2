@@ -45,9 +45,9 @@ export default function DadPage() {
       <section className="bg-[#FFFFFF] border-b border-[rgba(0,0,0,0.08)]">
         <div className="max-w-4xl mx-auto px-6 lg:px-12 py-8 flex flex-col sm:flex-row gap-6 sm:gap-12 justify-center text-center">
           {[
-            { stat: "2", label: "Daughters at Pine Glen" },
-            { stat: "Active", label: "Coach & Rec Volunteer" },
-            { stat: "Every", label: "PTC Meeting Since Enrollment" },
+            { stat: "2", label: "Daughters in BPS" },
+            { stat: "Active", label: "Room Parent & Rec Volunteer" },
+            { stat: "Every", label: "Milestone Since Enrollment" },
           ].map((item, i) => (
             <motion.div
               key={item.label}
