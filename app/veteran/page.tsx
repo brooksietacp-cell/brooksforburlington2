@@ -116,7 +116,7 @@ export default function VeteranPage() {
               Enhancing District Operations
             </h2>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed mb-4">
-              School districts are complex organizations with multi-million dollar budgets, thousands of employees, and the future of our children at stake. They deserve the same level of operational excellence that the military demands.
+              School districts are complex organizations with multi-million dollar budgets, hundreds of employees, and the future of our children at stake. They deserve the same level of operational excellence that the military demands.
             </p>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed">
               I&apos;m bringing proven methodologies for resource allocation, performance measurement, and accountability to our school board. No more waste. No more excuses. Just results-oriented leadership that puts students first.
