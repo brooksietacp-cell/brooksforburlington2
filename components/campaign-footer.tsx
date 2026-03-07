@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Play, CheckCircle } from "lucide-react";
 import { useFormSubmit } from "@/hooks/use-form-submit";
+import { UtmFields } from "@/components/utm-fields";
 
 export function CampaignFooter() {
   const { status, handleSubmit, reset } = useFormSubmit();
@@ -81,6 +82,7 @@ export function CampaignFooter() {
               className="flex flex-col gap-4"
             >
               <input type="hidden" name="form-type" value="contact" />
+              <UtmFields />
               <div className="flex flex-col md:flex-row gap-4">
                 <input
                   type="text"

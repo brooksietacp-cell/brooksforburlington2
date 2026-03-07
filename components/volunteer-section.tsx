@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle, ChevronDown } from "lucide-react";
 import { useFormSubmit } from "@/hooks/use-form-submit";
+import { UtmFields } from "@/components/utm-fields";
 
 const volunteerOptions = [
   { value: "", label: "HOW WOULD YOU LIKE TO HELP?" },
@@ -69,6 +70,7 @@ export function VolunteerSection() {
               className="flex flex-col gap-4"
             >
               <input type="hidden" name="form-type" value="volunteer" />
+              <UtmFields />
               <div className="flex flex-col md:flex-row gap-4">
                 <input
                   type="text"
@@ -133,22 +135,13 @@ export function VolunteerSection() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.3 }}
-                    className="flex flex-col md:flex-row gap-4"
                   >
                     <input
                       type="text"
-                      name="yard_sign_name"
-                      placeholder="FULL NAME FOR DELIVERY"
-                      disabled={status === "submitting"}
-                      className="flex-1 bg-[#FFFFFF] border border-[#1B3A5C] px-6 py-4 font-mono text-xs tracking-widest text-[#1A1A1A] placeholder-[#A3A3A3] focus:outline-none focus:border-[#1A1A1A] transition-colors disabled:opacity-50"
-                      aria-label="Full name for yard sign delivery"
-                    />
-                    <input
-                      type="text"
                       name="yard_sign_address"
-                      placeholder="STREET ADDRESS"
+                      placeholder="STREET ADDRESS FOR YARD SIGN DELIVERY"
                       disabled={status === "submitting"}
-                      className="flex-1 bg-[#FFFFFF] border border-[#1B3A5C] px-6 py-4 font-mono text-xs tracking-widest text-[#1A1A1A] placeholder-[#A3A3A3] focus:outline-none focus:border-[#1A1A1A] transition-colors disabled:opacity-50"
+                      className="w-full bg-[#FFFFFF] border border-[#1B3A5C] px-6 py-4 font-mono text-xs tracking-widest text-[#1A1A1A] placeholder-[#A3A3A3] focus:outline-none focus:border-[#1A1A1A] transition-colors disabled:opacity-50"
                       aria-label="Street address for yard sign delivery"
                     />
                   </motion.div>
