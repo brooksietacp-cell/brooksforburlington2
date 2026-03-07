@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const timeline = [
-  { year: "Enlistment", title: "Air Force Active Duty", text: "Entered active duty service in the United States Air Force, beginning a 24-year career in defense operations and acquisitions." },
+  { year: "Enlistment", title: "Air Force Active Duty", text: "Entered active duty service in the United States Air Force, beginning a 24-year career in Special Operations." },
   { year: "Top 2%", title: "Senior Master Sergeant", text: "Promoted to Senior Master Sergeant \u2014 a rank achieved by only 2% of Airmen. Managed teams of up to 219 members and acquisitions up to $250M." },
   { year: "2023", title: "Transition to Public Service", text: "Elected to the Burlington School Committee. Applied military discipline and acquisition expertise to school district governance." },
 ];
