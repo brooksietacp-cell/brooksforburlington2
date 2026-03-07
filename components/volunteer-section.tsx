@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle, ChevronDown } from "lucide-react";
 import { useFormSubmit } from "@/hooks/use-form-submit";
 
@@ -9,12 +10,13 @@ const volunteerOptions = [
   { value: "door-knocking", label: "Door knocking" },
   { value: "phone-calls", label: "Phone calls" },
   { value: "sign-holding", label: "Sign holding" },
-  { value: "yard-sign", label: "Yard sign" },
+  { value: "yard-sign", label: "Yard Sign" },
   { value: "general-support", label: "General support" },
 ];
 
 export function VolunteerSection() {
   const { status, handleSubmit, reset } = useFormSubmit();
+  const [showAddress, setShowAddress] = useState(false);
 
   return (
     <section id="volunteer" className="bg-[#F0EFE9] py-24 lg:py-32 px-6 lg:px-12">
@@ -104,6 +106,7 @@ export function VolunteerSection() {
                     className="w-full bg-[#FFFFFF] border border-[rgba(0,0,0,0.15)] px-6 py-4 pr-12 font-mono text-xs tracking-widest text-[#1A1A1A] focus:outline-none focus:border-[#1B3A5C] transition-colors disabled:opacity-50 appearance-none cursor-pointer"
                     aria-label="How would you like to help"
                     defaultValue=""
+                    onChange={(e) => setShowAddress(e.target.value === "yard-sign")}
                   >
                     {volunteerOptions.map((option) => (
                       <option
@@ -122,6 +125,36 @@ export function VolunteerSection() {
                   />
                 </div>
               </div>
+
+              <AnimatePresence>
+                {showAddress && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.3 }}
+                    className="flex flex-col md:flex-row gap-4"
+                  >
+                    <input
+                      type="text"
+                      name="yard_sign_name"
+                      placeholder="FULL NAME FOR DELIVERY"
+                      disabled={status === "submitting"}
+                      className="flex-1 bg-[#FFFFFF] border border-[#1B3A5C] px-6 py-4 font-mono text-xs tracking-widest text-[#1A1A1A] placeholder-[#A3A3A3] focus:outline-none focus:border-[#1A1A1A] transition-colors disabled:opacity-50"
+                      aria-label="Full name for yard sign delivery"
+                    />
+                    <input
+                      type="text"
+                      name="yard_sign_address"
+                      placeholder="STREET ADDRESS"
+                      disabled={status === "submitting"}
+                      className="flex-1 bg-[#FFFFFF] border border-[#1B3A5C] px-6 py-4 font-mono text-xs tracking-widest text-[#1A1A1A] placeholder-[#A3A3A3] focus:outline-none focus:border-[#1A1A1A] transition-colors disabled:opacity-50"
+                      aria-label="Street address for yard sign delivery"
+                    />
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
               {status === "error" && (
                 <p className="font-mono text-xs tracking-widest text-[#C41E3A]">
                   Something went wrong. Please try again.
