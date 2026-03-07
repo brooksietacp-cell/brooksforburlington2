@@ -9,7 +9,7 @@ const volunteerOptions = [
   { value: "door-knocking", label: "Door knocking" },
   { value: "phone-calls", label: "Phone calls" },
   { value: "sign-holding", label: "Sign holding" },
-  { value: "event-help", label: "Event help" },
+  { value: "yard-sign", label: "Yard Sign" },
   { value: "general-support", label: "General support" },
 ];
 
