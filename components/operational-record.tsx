@@ -10,8 +10,8 @@ const cards = [
   },
   {
     overline: "ACCOUNTABILITY",
-    title: "Sole Vote on Principle",
-    text: "Cast the only dissenting vote on an off-agenda superintendent contract extension. Pushed for independent investigation and full accountability when student survey procedures were violated. Abstained on MCAS resolution until replacement standards were defined. When something isn\u2019t right, I say so.",
+    title: "Governance with Integrity",
+    text: " Pushed for independent review when district procedures weren't followed. Advocated for proper agenda notice and policy compliance on all committee actions. Withheld support on measures until replacement standards were clearly defined. Accountability isn't about disagreement, it's about making sure the process works for everyone.",
   },
   {
     overline: "SAFETY",
