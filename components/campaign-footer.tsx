@@ -120,28 +120,30 @@ export function CampaignFooter() {
         </motion.div>
 
         {/* Donate Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="mb-16 text-center"
-        >
-          <p className="font-mono text-xs tracking-[0.3em] text-[#B0D4F1] uppercase mb-4">
-            SUPPORT THE CAMPAIGN
-          </p>
-          
-            href="https://venmo.com/BrooksforBurlington?txn=pay"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-block bg-[#C41E3A] text-[#FFFFFF] font-display text-xs font-bold tracking-widest px-8 py-4 hover:bg-[#A3182F] transition-colors duration-200 uppercase"
-          >
-            DONATE VIA VENMO
-          </a>
-          <p className="font-mono text-xs tracking-widest text-[#FFFFFF]/40 mt-4 max-w-md mx-auto">
-            Every dollar goes to yard signs, door-knocking, and getting the message out.
-          </p>
-        </motion.div>
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.2 }}
+  viewport={{ once: true }}
+  className="mb-16 text-center"
+>
+  <p className="font-mono text-xs tracking-[0.3em] text-[#B0D4F1] uppercase mb-4">
+    SUPPORT THE CAMPAIGN
+  </p>
+
+  <a
+    href="https://venmo.com/BrooksforBurlington?txn=pay"
+    target="_blank"
+    rel="noreferrer"
+    className="inline-block bg-[#C41E3A] text-[#FFFFFF] font-display text-xs font-bold tracking-widest px-8 py-4 hover:bg-[#A3182F] transition-colors duration-200 uppercase"
+  >
+    DONATE VIA VENMO
+  </a>
+
+  <p className="font-mono text-xs tracking-widest text-[#FFFFFF]/40 mt-4 max-w-md mx-auto">
+    Every dollar goes to yard signs, door-knocking, and getting the message out.
+  </p>
+</motion.div>
 
         {/* Legal */}
         <div className="border-t border-[rgba(255,255,255,0.1)] pt-8">
