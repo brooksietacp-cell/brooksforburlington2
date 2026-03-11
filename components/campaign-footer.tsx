@@ -19,7 +19,7 @@ export function CampaignFooter() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <div className="relative aspect-video bg-[#2A2A2A] border border-[rgba(255,255,255,0.1)] flex items-center justify-center cursor-pointer group">
+          <video src="/videos/campaign-message.mp4" controls className="w-full aspect-video" poster="/images/campaign/hero.jpg" />
             {/*
               TO ADD YOUR VIDEO:
               Replace this entire <div> with:
