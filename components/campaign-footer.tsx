@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Play, CheckCircle } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import { useFormSubmit } from "@/hooks/use-form-submit";
 import { UtmFields } from "@/components/utm-fields";
 
@@ -10,7 +10,8 @@ export function CampaignFooter() {
 
   return (
     <footer id="contact" className="bg-[#1A1A1A] py-24 lg:py-32 px-6 lg:px-12">
-      {/* Video Player */}
+      <div className="max-w-4xl mx-auto">
+        {/* Video Player */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -129,7 +130,7 @@ export function CampaignFooter() {
           <p className="font-mono text-xs tracking-[0.3em] text-[#B0D4F1] uppercase mb-4">
             SUPPORT THE CAMPAIGN
           </p>
-          <a
+          
             href="https://venmo.com/BrooksforBurlington?txn=pay"
             target="_blank"
             rel="noreferrer"
