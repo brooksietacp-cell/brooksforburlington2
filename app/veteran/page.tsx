@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const timeline = [
-  { year: "Enlistment", title: "Air Force Active Duty", text: "Entered active duty service in the United States Air Force, beginning a 24-year career in defense operations and acquisitions." },
+  { year: "Enlistment", title: "Air Force Active Duty", text: "Entered active duty service in the United States Air Force, beginning a 24-year career in Special Operations." },
   { year: "Top 2%", title: "Senior Master Sergeant", text: "Promoted to Senior Master Sergeant \u2014 a rank achieved by only 2% of Airmen. Managed teams of up to 219 members and acquisitions up to $250M." },
   { year: "2023", title: "Transition to Public Service", text: "Elected to the Burlington School Committee. Applied military discipline and acquisition expertise to school district governance." },
 ];
@@ -116,7 +116,7 @@ export default function VeteranPage() {
               Enhancing District Operations
             </h2>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed mb-4">
-              School districts are complex organizations with multi-million dollar budgets, thousands of employees, and the future of our children at stake. They deserve the same level of operational excellence that the military demands.
+              School districts are complex organizations with multi-million dollar budgets, hundreds of employees, and the future of our children at stake. They deserve the same level of operational excellence that the military demands.
             </p>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed">
               I&apos;m bringing proven methodologies for resource allocation, performance measurement, and accountability to our school board. No more waste. No more excuses. Just results-oriented leadership that puts students first.

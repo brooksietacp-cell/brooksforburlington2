@@ -8,7 +8,7 @@ const boxes = [
   {
     icon: Heart,
     label: "THE DAD",
-    text: "Dad to Lillian & Madelyn at Pine Glen Elementary. When I vote on budgets, safety upgrades, or curriculum changes, my own kids are directly affected. That\u2019s my accountability. I go home every night.",
+    text: "Dad to Lillian & Madelyn students in BPS. When I vote on budgets, safety upgrades, or curriculum changes, my own kids are directly affected. That\u2019s my accountability when I go home every night.",
     href: "/dad",
   },
   {

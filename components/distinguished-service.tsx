@@ -51,7 +51,7 @@ export function DistinguishedService() {
             className="lg:w-1/2 flex flex-col gap-8"
           >
             <p className="font-body text-base md:text-lg text-[#6B6B6B] leading-relaxed">
-              Three years of committee work, measured in results. When I committed to fiscal discipline, transparency, and safety, I meant it &mdash; and the record backs it up.
+              Three years of committee work, measured in results. When I committed to fiscal discipline, transparency, and safety, I meant it,  and the record backs it up.
             </p>
 
             <div className="flex flex-col gap-4">
