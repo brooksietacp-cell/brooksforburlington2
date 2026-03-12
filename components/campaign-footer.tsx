@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Play, CheckCircle } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import { useFormSubmit } from "@/hooks/use-form-submit";
 import { UtmFields } from "@/components/utm-fields";
 
@@ -11,7 +11,7 @@ export function CampaignFooter() {
   return (
     <footer id="contact" className="bg-[#1A1A1A] py-24 lg:py-32 px-6 lg:px-12">
       <div className="max-w-4xl mx-auto">
-        {/* Video Player — Replace the placeholder below with your <video> or embed once ready */}
+        {/* Video Player */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -19,22 +19,14 @@ export function CampaignFooter() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <div className="relative aspect-video bg-[#2A2A2A] border border-[rgba(255,255,255,0.1)] flex items-center justify-center cursor-pointer group">
-            {/*
-              TO ADD YOUR VIDEO:
-              Replace this entire <div> with:
-              <video src="/videos/campaign-message.mp4" controls className="w-full aspect-video" poster="/images/campaign/hero.jpg" />
-              or embed a YouTube/Vimeo iframe here.
-            */}
-            <div className="w-16 h-16 border-2 border-[#FFFFFF] flex items-center justify-center group-hover:bg-[rgba(255,255,255,0.1)] transition-colors duration-200">
-              <Play className="w-6 h-6 text-[#FFFFFF] ml-1" strokeWidth={1.5} />
-            </div>
-            <p className="absolute bottom-4 left-4 font-mono text-xs tracking-widest text-[#FFFFFF]/50 uppercase">
-              CAMPAIGN MESSAGE — 0:30
-            </p>
-          </div>
+          <video
+            src="/videos/campaign-message.mp4"
+            controls
+            className="w-full aspect-video border border-[rgba(255,255,255,0.1)]"
+            poster="/images/campaign/hero.jpg"
+          />
           <p className="font-mono text-xs tracking-widest text-[#FFFFFF]/50 text-center mt-6 uppercase">
-            {'"When something isn\'t right, I say so. When your tax dollars are at stake, I do the math. That\'s the job."'}
+            CAMPAIGN MESSAGE — 0:30
           </p>
         </motion.div>
 
@@ -128,28 +120,30 @@ export function CampaignFooter() {
         </motion.div>
 
         {/* Donate Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="mb-16 text-center"
-        >
-          <p className="font-mono text-xs tracking-[0.3em] text-[#B0D4F1] uppercase mb-4">
-            SUPPORT THE CAMPAIGN
-          </p>
-          <a
-            href="https://venmo.com/BrooksforBurlington?txn=pay"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-block bg-[#C41E3A] text-[#FFFFFF] font-display text-xs font-bold tracking-widest px-8 py-4 hover:bg-[#A3182F] transition-colors duration-200 uppercase"
-          >
-            DONATE VIA VENMO
-          </a>
-          <p className="font-mono text-xs tracking-widest text-[#FFFFFF]/40 mt-4 max-w-md mx-auto">
-            Every dollar goes to yard signs, door-knocking, and getting the message out.
-          </p>
-        </motion.div>
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.2 }}
+  viewport={{ once: true }}
+  className="mb-16 text-center"
+>
+  <p className="font-mono text-xs tracking-[0.3em] text-[#B0D4F1] uppercase mb-4">
+    SUPPORT THE CAMPAIGN
+  </p>
+
+  <a
+    href="https://venmo.com/BrooksforBurlington?txn=pay"
+    target="_blank"
+    rel="noreferrer"
+    className="inline-block bg-[#C41E3A] text-[#FFFFFF] font-display text-xs font-bold tracking-widest px-8 py-4 hover:bg-[#A3182F] transition-colors duration-200 uppercase"
+  >
+    DONATE VIA VENMO
+  </a>
+
+  <p className="font-mono text-xs tracking-widest text-[#FFFFFF]/40 mt-4 max-w-md mx-auto">
+    Every dollar goes to yard signs, door-knocking, and getting the message out.
+  </p>
+</motion.div>
 
         {/* Legal */}
         <div className="border-t border-[rgba(255,255,255,0.1)] pt-8">
