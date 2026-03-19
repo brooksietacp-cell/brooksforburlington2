@@ -71,7 +71,13 @@ export function Header() {
             ))}
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            <a
+              href="/#volunteer?sign=true"
+              className="hidden md:inline-block border border-[#C41E3A] text-[#C41E3A] font-display text-xs font-bold tracking-widest px-5 py-3 hover:bg-[#C41E3A] hover:text-[#FFFFFF] transition-colors duration-200 uppercase"
+            >
+              YARD SIGN
+            </a>
             <a
               href="https://venmo.com/BrooksforBurlington?txn=pay"
               target="_blank"
@@ -141,7 +147,14 @@ export function Header() {
                 ))}
               </nav>
 
-              <div className="px-6 py-6 border-t border-[rgba(0,0,0,0.08)]">
+              <div className="px-6 py-6 border-t border-[rgba(0,0,0,0.08)] flex flex-col gap-3">
+                <a
+                  href="/#volunteer?sign=true"
+                  onClick={() => setMobileOpen(false)}
+                  className="block text-center border border-[#C41E3A] text-[#C41E3A] font-display text-sm font-bold tracking-widest px-6 py-4 hover:bg-[#C41E3A] hover:text-[#FFFFFF] transition-colors duration-200 uppercase"
+                >
+                  REQUEST A YARD SIGN
+                </a>
                 <a
                   href="https://venmo.com/BrooksforBurlington?txn=pay"
                   target="_blank"

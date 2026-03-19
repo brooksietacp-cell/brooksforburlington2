@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle, ChevronDown } from "lucide-react";
 import { useFormSubmit } from "@/hooks/use-form-submit";
@@ -15,12 +16,27 @@ const volunteerOptions = [
   { value: "general-support", label: "General support" },
 ];
 
-export function VolunteerSection() {
+function VolunteerForm() {
   const { status, handleSubmit, reset } = useFormSubmit();
   const [showAddress, setShowAddress] = useState(false);
+  const [helpType, setHelpType] = useState("");
+  const searchParams = useSearchParams();
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  // Auto-select yard sign if ?sign=true is in the URL
+  useEffect(() => {
+    if (searchParams.get("sign") === "true") {
+      setHelpType("yard-sign");
+      setShowAddress(true);
+      // Small delay to let the page render, then scroll to the form
+      setTimeout(() => {
+        sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 300);
+    }
+  }, [searchParams]);
 
   return (
-    <section id="volunteer" className="bg-[#F0EFE9] py-24 lg:py-32 px-6 lg:px-12">
+    <section id="volunteer" ref={sectionRef} className="bg-[#F0EFE9] py-24 lg:py-32 px-6 lg:px-12">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -107,8 +123,11 @@ export function VolunteerSection() {
                     disabled={status === "submitting"}
                     className="w-full bg-[#FFFFFF] border border-[rgba(0,0,0,0.15)] px-6 py-4 pr-12 font-mono text-xs tracking-widest text-[#1A1A1A] focus:outline-none focus:border-[#1B3A5C] transition-colors disabled:opacity-50 appearance-none cursor-pointer"
                     aria-label="How would you like to help"
-                    defaultValue=""
-                    onChange={(e) => setShowAddress(e.target.value === "yard-sign")}
+                    value={helpType}
+                    onChange={(e) => {
+                      setHelpType(e.target.value);
+                      setShowAddress(e.target.value === "yard-sign");
+                    }}
                   >
                     {volunteerOptions.map((option) => (
                       <option
@@ -165,5 +184,13 @@ export function VolunteerSection() {
         </motion.div>
       </div>
     </section>
+  );
+}
+
+export function VolunteerSection() {
+  return (
+    <Suspense fallback={null}>
+      <VolunteerForm />
+    </Suspense>
   );
 }
