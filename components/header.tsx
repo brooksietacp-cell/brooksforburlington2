@@ -73,7 +73,7 @@ export function Header() {
 
           <div className="flex items-center gap-3">
             <a
-              href="/#volunteer?sign=true"
+              href="/?sign=true#volunteer"
               className="hidden md:inline-block border border-[#C41E3A] text-[#C41E3A] font-display text-xs font-bold tracking-widest px-5 py-3 hover:bg-[#C41E3A] hover:text-[#FFFFFF] transition-colors duration-200 uppercase"
             >
               YARD SIGN
@@ -149,7 +149,7 @@ export function Header() {
 
               <div className="px-6 py-6 border-t border-[rgba(0,0,0,0.08)] flex flex-col gap-3">
                 <a
-                  href="/#volunteer?sign=true"
+                  href="/?sign=true#volunteer"
                   onClick={() => setMobileOpen(false)}
                   className="block text-center border border-[#C41E3A] text-[#C41E3A] font-display text-sm font-bold tracking-widest px-6 py-4 hover:bg-[#C41E3A] hover:text-[#FFFFFF] transition-colors duration-200 uppercase"
                 >
