@@ -36,9 +36,7 @@ export function Hero() {
           </h1>
 
           <p className="font-body text-base md:text-lg text-[#FFFFFF]/70 max-w-[600px] leading-relaxed mb-8">
-            Three years of transparent governance, fiscal oversight, and safety
-            leadership for Burlington Public Schools. 
-            Re-elect Jeremy Brooks, April 11.
+            Three years of transparent governance, fiscal oversight, and safety leadership for Burlington Public Schools. Re-elect Jeremy Brooks — April 11.
           </p>
 
           <a
