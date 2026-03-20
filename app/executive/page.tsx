@@ -82,7 +82,7 @@ export default function ExecutivePage() {
               As a Product Manager, I lead product development for defense technology systems that protect American service members and allies. This role demands precision, strategic thinking, and the ability to coordinate complex initiatives across multiple teams and stakeholders.
             </p>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed">
-              Working at the cutting edge of technology has given me a unique perspective on how innovation can solve seemingly impossible problems. Our schools deserve that same innovative approach &mdash; not bureaucratic status quo thinking.
+              Working at the cutting edge of technology has given me a unique perspective on how innovation can solve seemingly impossible problems. Our schools deserve that same innovative approach; not bureaucratic status quo thinking.
             </p>
           </motion.div>
 
@@ -116,7 +116,7 @@ export default function ExecutivePage() {
               Technical project management requires balancing competing priorities, managing risk, and delivering results on schedule. These skills translate directly to school board governance, where complex initiatives often stall due to poor planning and execution.
             </p>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed">
-              Whether it&apos;s implementing new educational technology, managing construction projects, or rolling out district-wide initiatives, I bring proven methodologies for turning plans into reality. Our students can&apos;t wait for endless deliberation &mdash; they need action.
+              Whether it&apos;s implementing new educational technology, managing construction projects, or rolling out district-wide initiatives, I bring proven methodologies for turning plans into reality. Our students can&apos;t wait for endless deliberation; they need action.
             </p>
           </motion.div>
 
