@@ -28,7 +28,6 @@ function VolunteerForm() {
     if (searchParams.get("sign") === "true") {
       setHelpType("yard-sign");
       setShowAddress(true);
-      // Small delay to let the page render, then scroll to the form
       setTimeout(() => {
         sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 300);
