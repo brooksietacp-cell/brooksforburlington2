@@ -82,7 +82,7 @@ export default function VeteranPage() {
               Bronze Star Recipient
             </h2>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed mb-4">
-              The Bronze Star Medal is awarded for heroic or meritorious achievement in a combat zone. Receiving this honor four times wasn&apos;t about individual glory &mdash; it was recognition of what a team can accomplish when everyone commits to the mission.
+              The Bronze Star Medal is awarded for heroic or meritorious achievement in a combat zone. Receiving this honor four times wasn&apos;t about individual glory; it was recognition of what a team can accomplish when everyone commits to the mission.
             </p>
             <p className="font-body text-base text-[#6B6B6B] leading-relaxed">
               That same commitment to excellence, that same refusal to accept mediocrity, is what I bring to every challenge. Whether coordinating complex projects or advocating for better schools, the standard remains the same: mission success.
